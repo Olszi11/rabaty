@@ -1,0 +1,97 @@
+.section-accordion{
+    background-color: rgb(255,255,255);
+    position: relative;
+    border-bottom: 1px solid rgb(184, 184, 184);
+    border-top: 1px solid rgb(184, 184, 184);
+}
+.accordion {
+    &__container{
+        margin-bottom: 1.5rem;
+        position: relative;
+        height: auto;
+        &:before{
+            position: absolute; 
+            border: .5px solid rgba(74, 74, 74, 0.2);
+            height: 100%;
+            display: block; 
+            content: ''; 
+            left: 1rem; 
+            z-index: 2311; 
+            top: 2rem; 
+        }
+        &:nth-child(3){
+            margin-bottom: 0;
+            &::before{
+                height: 0;
+            }
+        }
+    }
+    background-color: rgb(255,255,255);
+    color: rgb(39, 39, 39);
+    cursor: pointer;
+    display: flex;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    &__number{
+        width: 2rem;
+        height: 2rem;
+        background-color: rgb(74, 74, 74);
+        color: #fff;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        border-radius: 50%;
+        text-align: center;
+        z-index: 321213;
+        &:last-child{
+            &::before{
+                display: none;
+            }
+        }
+    }
+    &__question{
+        padding-top: .5rem;
+        padding-left: .5rem;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+
+}
+
+
+
+
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: rgb(255,255,255);
+}
+
+.accordion__number:hover{
+    background-color: rgb(227, 6, 19);
+}
+
+.active-colors{
+    background-color: rgb(227, 6, 19);
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+    padding: 0 2.5rem;
+    background-color: white;
+    width: 80%;
+    overflow: hidden;
+    
+    transition: max-height 0.2s ease-out;
+    &__answer{
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+}
+
+// .show-panel{
+//     display: block;
+// }

@@ -1,0 +1,127 @@
+.section {
+    position: relative;
+    width: 100%;
+    &--padding {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    &--padding-t{
+        padding-top:2rem;
+    }
+    &--padding-b{
+        padding-bottom:2rem;
+    }
+
+    &__title{
+        font-size: 1.2rem;
+        padding-bottom: 1rem;
+        &--margin-b{
+            margin-bottom: 1rem;
+        }
+    }
+    &__title-b{
+        font-size: 1.6rem;
+    }
+    &__border{
+        border-bottom: 1px solid rgb(184,184,184);
+    }
+}
+
+
+//   &--padding-bt {
+//     padding-top: 5rem;
+//     padding-bottom: 10rem;
+//   }
+//   &--padding-b {
+//     padding-bottom: 10rem;
+//   }
+//   &--padding-small {
+//     padding-top: 5rem;
+//     padding-bottom: 5rem;
+//   }
+//   &--half {
+//     padding-top: 5rem;
+//     padding-bottom: 5rem;
+//     &:before {
+//       content: '';
+//       position: absolute;
+//       left: calc(50% - .5px);
+//       top: 5rem;
+//       bottom: 5rem;
+//       width: 1px;
+//       background: rgba($black, .25);
+//     }
+//   }
+//   &__title {
+//     font-size: 1.8rem;
+//     line-height: 2rem;
+//     text-transform: uppercase;
+//     &--center {
+//       text-align: center;
+//     }
+//     &--margin-b {
+//       margin-bottom: 3rem;
+//     }
+//   }
+//   &__desc {
+//     margin-bottom: 3rem;
+//     &--center {
+//       text-align: center;
+//     }
+//   }
+//   &__center {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-direction: column;
+//   }
+
+
+// @media (max-width: 1024px) {
+//   .section {
+//     &--padding {
+//       padding-top: 8rem;
+//       padding-bottom: 8rem;
+//       &:last-child {
+//         padding-bottom: 4rem;
+//       }
+//     }
+//     &--padding-bt {
+//       padding-top: 4rem;
+//       padding-bottom: 8rem;
+//       &:last-child {
+//         padding-bottom: 4rem;
+//       }
+//     }
+//     &--padding-b {
+//       padding-bottom: 8rem;
+//       &:last-child {
+//         padding-bottom: 4rem;
+//       }
+//     }
+//     &--padding-small {
+//       padding-top: 4rem;
+//       padding-bottom: 4rem;
+//       &:last-child {
+//         padding-bottom: 4rem;
+//       }
+//     }
+//     &--half {
+//       padding-top: 4rem;
+//       padding-bottom: 4rem;
+//       &:last-child {
+//         padding-bottom: 4rem;
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 576px) {
+//   .section {
+//     &--half {
+//       &:before {
+//         content: none;
+//       }
+//     }
+//   }
+// }

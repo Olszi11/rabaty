@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $main-font;
+  overflow-x: hidden;
+  font-size: $main-size;
+  min-height: 1rem;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-top: 4rem;
+  background-color: #f3f3f3;
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+  
+}
+
+html {
+  font-size: $main-size;
+  color: $black;
+  height: 100%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+.centered{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+// h1, h2, h3, h4, h5, h6 {
+//   font-weight: 300;
+//   margin-bottom: 1rem;
+// }
+
+// h1 {
+//   font-size: 3.6rem;
+//   line-height: 4rem;
+// }
+
+// h2 {
+//   font-size: 1.8rem;
+//   line-height: 2rem;
+// }
+
+// p {
+//   line-height: 1.25rem;
+//   &:not(:last-child) {
+//     margin-bottom: 1rem;
+//   }
+// }
+
+// // button {
+// //   outline: none;
+// //   box-shadow: none;
+// //   border: none;
+// //   background: none;
+// // }
+
+// // input {
+// //   outline: none;
+// // }
+
+// // .min-100 {
+// //   min-height: 100%;
+// //   & div {
+// //     min-height: 100%;
+// //   }
+// // }
+
+// // .row {
+// //   &--center {
+// //     justify-content: center;
+// //   }
+// // }
+
+// // .flex-column-center {
+// //   display: flex;
+// //   flex-direction: column;
+// //   justify-content: center;
+// //   min-height: 100%;
+// //   & .button {
+// //     align-self: center;
+// //   }
+// // }
+
+// // .bold {
+// //   font-weight: 700;
+// // }
+
+// // .lighter {
+// //   font-weight: 300;
+// // }
+
+// // .map {
+// //   line-height: 0;
+// //   background: rgba($black, .25);
+// //   box-shadow: rgba($black, 0.1) 0 0 1.5rem;
+// //   height: 30rem;
+// //   & iframe {
+// //     height: 100%;
+// //   }
+// // }
+
+@media (max-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+// // .display-xs {
+// //   display: none;
+// // }
+
+// // .display-sm {
+// //   display: none;
+// // }
+
+// // @media (max-width: 768px) {
+// //   body {
+// //     padding-top: 3.5rem;
+// //     &.small-header {
+// //       padding-top: 3.5rem;
+// //     }
+// //   }
+// //   .display-sm {
+// //     display: block;
+// //   }
+// // }
+
+// // @media (max-width: 576px) {
+// //   .display-xs {
+// //     display: block;
+// //   }
+// //   #treningi, #odliczanie {
+// //     padding-bottom: 4rem;
+// //   }
+// //   body{
+// //     padding-bottom: 3rem;
+// //   }
+// // }

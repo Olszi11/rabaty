@@ -1,0 +1,148 @@
+.section-newsletter{
+    background-color: rgb(255,255,255);
+    margin-bottom: 200px;
+}
+.newsletter-desc{
+    font-size: .7rem;
+    color: rgb(74, 74, 74);
+    line-height: 1rem;
+}
+.newsletter__container{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Open Sans', sans-serif;
+    font-size: .7rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid green;
+    
+    &__input{
+        color: rgb(74, 74, 74);
+        background-color: #ffffff;
+        border-color: rgb(184, 184, 184);
+        border-width: 1px 0px 1px 1px;
+        border-radius: 5px 0px 0px 5px;
+        color: #000;
+        
+    }
+    
+   
+    &__checkbox-label{
+        font-size: .65rem;
+        margin: 0;
+        margin-top: .5rem;
+        cursor:pointer;
+        position: relative;
+        padding-left: 1.2rem;
+        text-align: left;
+        width: auto;
+        &:before{
+            content: "";
+            border: 1px solid rgba(74, 74, 74,0.44);
+            display: block;
+            width: .75rem;
+            height: .75rem;
+            position: absolute;
+            left:0;
+            top: 0;
+            background-color: transparent;
+        }
+        .checkbox{
+            position: absolute;
+            left:0;
+            top: 0;
+            cursor:pointer;
+            opacity:0; 
+        }
+        .tick{
+            background:url("/assets/img/checked-black.png");
+            background-size: cover;
+            height: .56rem;
+            width:.6rem;
+            display: none;
+            position: absolute;
+            top: .075rem;
+            left: .07rem;
+        }
+    }
+    .checkbox:checked~.tick{
+        display: block;
+    }
+}
+.label-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin:0;
+    padding:0;
+}
+.font-info{
+    visibility: hidden;
+    cursor: pointer; 
+}
+.return-msg{
+    font-size: .8rem;
+    color: rgb(74, 74, 74);
+    font-weight: 700;
+    padding: 1rem 0;
+    text-align:center;
+    align-self:center;
+    visibility: hidden;
+}
+.show{
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.hidden{
+    visibility: hidden !important;
+    opacity: 0 !important;
+}
+
+.tooltips{
+    position: relative;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 90%;
+    background-color: rgb(74, 74, 74);
+    color: #fff;
+    text-align: center;
+    padding: .25rem .1rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 10%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -.25rem;
+    border-width: .25rem;
+    border-style: solid;
+    border-color: rgb(74, 74, 74) transparent transparent transparent;
+}
+
+.tooltips:hover {
+    .tooltiptext {
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+}
+
+                          
+                            
