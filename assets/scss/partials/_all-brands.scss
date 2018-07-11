@@ -1,0 +1,31 @@
+.brands-list{
+    width: 100%;
+}
+.brand__element{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $white;
+    box-shadow: rgba(74, 74, 74, 0.1) 0px 2px 10px 0px;
+    width: 100%;
+    margin-top: 1rem;
+
+    &-img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width:100%;
+        padding: 1rem 1rem; 
+  
+    }
+}
+
+.brand-img{
+    max-width: 60%; 
+}
+
+    
+    
+    
+

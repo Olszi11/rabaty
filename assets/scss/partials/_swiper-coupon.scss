@@ -3,21 +3,23 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #fff;
+    background-color: $white;
     box-shadow: rgba(74, 74, 74, 0.1) 0px 2px 10px 0px;
-    
-   
+    width: 100%;
     &-img{  
         display: flex;
         justify-content: center;
         align-items: center;
         width:100%;
-        padding: 2.825rem 0;
-        border-bottom: 1px solid rgb(184,184,184);
+        padding: 1rem 1rem; 
+        border-bottom: 1px solid $grey;
+        // object-fit: cover;
+        // height: 7.4rem;
     }
     &-brand{
-        width: 7rem;
-        height: 2.5rem; 
+        max-width: 80%; 
+        // max-height: 100%;
+        // object-fit: cover;
     }
     &-content{
         width: 100%;
@@ -27,7 +29,7 @@
     }
     &-type{
         font-size: .7rem;
-        color: rgb(74, 74, 74);
+        color: $darken-grey;
         align-self: flex-start;
         padding: 1rem .75rem .5rem .75rem;
         width: 100%;
@@ -45,20 +47,22 @@
         display: flex;
         justify-content: space-between;
         font-size: .7rem;
-        color: rgb(74, 74, 74);
+        color: $darken-grey;
         width: 100%;
     }
     &-sponsored{
         height: 1rem;
         width:1rem;
+        margin-right: .1rem;
     }
     &-users{
         width: 1rem;
         height: 1rem;
+        margin-right: .1rem;
     }
     &-btn{
-        background-color: rgb(227, 6, 19);
-        color: rgb(255, 255, 255);
+        background-color: $red;
+        color: $white;
         font-weight: bold;
         text-align: center;
         border-radius: 5px;
@@ -90,13 +94,39 @@
 }
 
 .swiper-pagination-bullet{ 
-    background-color: rgb(184, 184, 184);
+    background-color: $grey;
     width: .75rem; 
     height: .75rem;  
     opacity: 1; 
     margin: 0 .4rem!important;
 } 
 .swiper-pagination-bullet-active{ 
-    background: rgb(227, 6, 19); 
+    background: $red;
     opacity: 1; 
 } 
+
+
+
+
+
+// .swiper__promoted-container{
+//     overflow: hidden;
+//     // margin: 0 -15px;
+//     // width: calc(100% + 30px);
+// }
+
+
+.swiper__promoted-container  .swiper-wrapper {
+    flex-wrap: nowrap;
+    // width: auto;
+    // box-sizing: border-box;
+    // margin-left: 0;
+    // margin-right: 0;
+}
+
+.swiper-slide {
+    height: auto;
+    flex-basis: auto;
+    // padding-right: 0;
+    // padding-left: 0;
+}

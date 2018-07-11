@@ -1,0 +1,73 @@
+.coupon-section{
+    background: $white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 1.5rem;
+} 
+
+.coupon-name__choose{
+    font-size: .7rem;
+    padding: .5rem 0 1rem 0;
+}
+.facebook-buttons{
+    display: flex;
+}
+
+.facebook-share, .facebook-like{
+    background-color: $facebook;
+    color: $white;
+    border-radius: 5px;
+    padding: .4rem 1.3rem;
+    font-size: .7rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+    &:hover{
+        opacity: .9;
+    }
+}
+.facebook-like{
+    margin-left: 1rem;
+}
+.coupon-code__container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.input__copy{
+    border: none;
+    color: $darken-grey;
+    background-color: $white;
+    
+    border-left: 1px solid $grey;
+    border-top: 1px solid $grey;
+    border-bottom: 1px solid $grey;
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    color: $black;
+    font-size: .7rem;
+    text-align: center;
+    padding: 1rem 4rem;
+    &:focus { 
+        outline: none !important;
+        box-shadow: none;
+    }
+   
+}
+.copy-button{
+    color: $white;
+    background-color: $red;
+    border: 1px solid $red;
+    border-radius: 0px 5px 5px 0px;
+    font-family: $main-font;
+    font-size: .7rem;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover{
+        background-color: $white;
+        color: $red;
+        
+    }
+}

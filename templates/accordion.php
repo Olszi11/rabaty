@@ -15,7 +15,7 @@
                                 <div class="accordion__question">Prosty sposób na tańsze zakupy</div>
                             </div>
                             <div class="panel">
-                                <p class="panel__answer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consequat erat at lectus blandit ornare sit amet in arcu. Phasellus feugiat aliquam mollis. Suspendisse sit amet sapien sed nisl rutrum sagittis in non lorem. Quisque dictum euismod dignissim. Nam mattis interdum nunc facilisis tincidunt. Pellentesque ac felis pellentesque, consequat metus eget, egestas urna. Praesent eget eros ligula. Sed aliquam efficitur lacus, at bibendum nibh. In blandit neque non ex aliquam tempor. </p>
+                                <p class="panel__answer">Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym.</p>
                             </div>
                         </div>
                         <div class="accordion__container">

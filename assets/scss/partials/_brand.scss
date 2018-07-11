@@ -1,0 +1,116 @@
+.brand{
+    background-color: $white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 0 1.5rem;
+    &__container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 0;
+    }
+    &__name-like{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    &__name-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__name{
+        font-size: 1.6rem;
+    }
+    &__like{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        svg{
+            height: 1.6rem;
+            width: 1.6rem;
+            margin-left: 1rem;
+        }
+    }
+    &__text{
+        width: 100%;
+        margin-bottom: 2rem;
+        line-height: 1rem;
+        color: $darken-grey;
+    }
+
+    &__desc{
+        font-size: .8rem;
+        
+    }
+    &__similar{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &-text{
+            font-size: .8rem;
+            font-weight: 700;
+        }
+        &-link{
+            width: 3rem;
+            height: 1rem;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        &-img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+    &__banner{
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        .banner{
+            object-fit: contain;
+            height:100%;
+        }
+    }
+
+    &__stars{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: center;
+        flex-direction: row;
+        & svg {
+            height: 1.5rem;
+            width: 1.5rem;
+            margin: 0 .125rem;
+            background: transparent;
+        }      
+    }
+    &__star {
+        fill: $darken-grey;
+    }
+    &__halfstar {
+        fill: transparent;
+        &.filled {
+          fill: $darken-grey;
+        }
+    }
+}
+
+
+
+.star {
+    position: relative;
+    width: 1.25rem;
+    margin: 0 .25rem;
+    & .st1 {
+      &:hover {
+        fill: $darken-grey;
+      }
+    }
+    & .st2 {
+      &:hover {
+        fill: $darken-grey;
+      }
+    }
+}

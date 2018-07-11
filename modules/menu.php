@@ -3,6 +3,7 @@
     <div class="row">
       <div class="col-lg-8 offset-lg-2">
         <div class="navbar__container">
+         
           <div class="navbar__logo-form">
             <div class="navbar-logo">
               <a class="navbar-logo__link" href="/">
@@ -14,7 +15,14 @@
               <span class="form-search__img"><img class="search-img" src="/assets/img/search.svg"></span>
             </form>
           </div>
+          
+          
           <div class="menu">
+            <div class="menu__hamburger">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </div>
             <ul class="menu__ul">
               <li class="menu__li">
                 <a class="menu__link" href="/marki">Marki</a>
@@ -28,9 +36,15 @@
               <li class="menu__li">
                 <a class="menu__link" href="/rekomendowane">Rekomendowane</a>
               </li>
+              <!-- <li class="menu__li">
+                <a class="menu__link" href="/logowanie">Zaloguj</a>
+              </li> -->
+              <li class="menu__li menu__photo">
+                <a href="/profil"><img class="user-photo" src="/assets/img/avatar.png"></a>
+              </li>
             </ul>
-            <a class="menu__link" href="/logowanie">Zaloguj</a>
           </div>
+       
         </div>
       </div>
     </div>

@@ -1,0 +1,21 @@
+.coupons__used{
+    .coupon{
+        &__offer{
+            &-text{
+                padding: .5rem .7rem .5rem .7rem;
+
+
+            }
+        }
+    }
+}
+
+.used-btn{
+    background-color: $grey;
+    color: $white;
+    box-shadow: none;
+    &:hover{
+        box-shadow: none;
+        cursor: default;
+    }
+}

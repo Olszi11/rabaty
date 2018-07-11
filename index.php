@@ -21,9 +21,18 @@ if (isset($url[1])) {
 		} else {
 			require_once('templates/404.php');
 		}
-		// if (stristr($url[0], 'admin') == false) {
-		// 	require_once('templates/footer.php');
-		// }
+		
+
+		switch ($url[0]) {
+			case 'logowanie':
+			case 'zaloz-konto':
+			
+				break;
+			default:
+				require_once('templates/footer.php');
+				break;
+		}
+	
 	} else {
 		require_once('templates/header.php');
 		require_once('templates/home.php');
@@ -42,9 +51,15 @@ if (isset($url[1])) {
 		} else {
 			require_once('templates/404.php');
 		}
-		// if (stristr($url[0], 'admin') == false) {
-		// 	require_once('templates/footer.php');
-		// }
+		switch ($url[0]) {
+			case 'logowanie':
+			case 'zaloz-konto':
+			
+				break;
+			default:
+				require_once('templates/footer.php');
+				break;
+		}
 	} else {
 		require_once('templates/header.php');
 		require_once('templates/home.php');
